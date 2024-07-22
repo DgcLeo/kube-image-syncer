@@ -1,9 +1,12 @@
 default:
   push_kubernetes: false
-  push_images: false
+  push_images: true
 
 kubernetes:
   version: v1.23.6
 
 images:
-  - docker.io/nginx:latest
+  - calico/node:v3.26.1
+  - calico/pod2daemon-flexvol:v3.26.1
+  - calico/cni:v3.26.1
+  - calico/kube-controllers:v3.26.1
