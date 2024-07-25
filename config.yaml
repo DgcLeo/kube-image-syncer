@@ -1,9 +1,9 @@
 default:
   push_kubernetes: false
-  push_images: false
+  push_images: true
 
 kubernetes:
   version: v1.23.6
 
 images:
-  - docker.io/nginx:latest
+  - registry.aliyuncs.com/google_containers/etcd:3.5.9-0-arm64
