@@ -1,9 +1,9 @@
 default:
   push_kubernetes: false
-  push_images: false
+  push_images: true
 
 kubernetes:
   version: v1.23.6
 
 images:
-  - docker.io/nginx:latest
+  - beats/filebeat:sha256-fabe26bafbf61edf06b7b8153c3deed0a53647eeac5527f940248a0377012fee
