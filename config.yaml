@@ -1,9 +1,10 @@
 default:
   push_kubernetes: false
-  push_images: false
+  push_images: true
 
 kubernetes:
   version: v1.23.6
 
 images:
-  - docker.io/nginx:latest
+  - cr2.fit2cloud.com/1panel/maxkb
+  - 1panel/maxkb
